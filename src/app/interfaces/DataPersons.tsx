@@ -1,6 +1,7 @@
 export interface DataPersons {
-    name: string | undefined,
-    avatar: string | undefined,
-    ra: number | undefined,
-    curse: string | undefined,
+    name: string,
+    avatar: string,
+    ra: number,
+    curse: string,
+    id: string
 }
