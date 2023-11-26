@@ -17,11 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+.wrapper{
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.scroll-custom{
+  overflow-y: auto;
+  height: 650px;
 }
