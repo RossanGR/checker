@@ -1,5 +1,6 @@
 "use client";
 import CardPersons from "@/app/components/cardPersons";
+import ApplicationConstants from "@/app/constants/ApplicationConstants";
 import { DataPersons } from "@/app/interfaces/DataPersons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,7 +16,7 @@ const Persons = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}persons`,
+          `${ApplicationConstants.NEXT_PUBLIC_API_URL}persons`,
           { next: { revalidate: 3600 } }
         );
         const data: DataPersons[] = await response.json();

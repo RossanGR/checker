@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { DataClasses } from "../interfaces/DataClasses";
 
-const CardClasses:React.FC<DataClasses> = ({name, image, id}) => {
+const CardClasses: React.FC<DataClasses> = ({ name, image, id }) => {
   return (
     <div className="flex justify-between items-center mt-5 px-20 py-3 bg-stone-300 rounded-lg">
       <div className="flex items-center justify-between">
@@ -11,7 +11,7 @@ const CardClasses:React.FC<DataClasses> = ({name, image, id}) => {
         <p className="ml-2">{name}</p>
       </div>
       <div>
-        <Link href={`/persons/${id}`}className="bg-neutral-100 rounded-lg p-2">
+        <Link href={`/persons/${id}`} className="bg-neutral-100 rounded-lg p-2">
           <VisibilityIcon /> Visualizar
         </Link >
       </div>
